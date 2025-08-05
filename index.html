@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Images - Download & ZIP</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <span class="bi-logo">//</span>
+                <span class="bulk-images">Multi Image Generator</span>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1><i class="fas fa-download"></i> Download Images & Get ZIP</h1>
+        
+        <input type="text" id="keyword" placeholder="Enter keyword">
+        <input type="number" id="num_images" placeholder="Number of images" min="1">
+        
+        <button class="download-btn" onclick="downloadImages()">
+            <i class="fas fa-cloud-download-alt"></i> Download
+        </button>
+
+        <!-- Progress Indicator -->
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <p id="progress-text">Waiting...</p>
+        </div>
+
+        <a id="download_link" style="display:none;" download>
+            <i class="fas fa-file-archive"></i> Download ZIP
+        </a>
+    </div>
+
+    <!-- FAQs Section -->
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3>🔹 What does this website do?</h3>
+            <p>This website allows you to search and download multiple images based on a keyword and get them as a ZIP file.</p>
+        </div>
+        <div class="faq">
+            <h3>🔹 How many images can I download?</h3>
+            <p>You can download as many images as you want, but large numbers may take time to process.</p>
+        </div>
+        <div class="faq">
+            <h3>🔹 Where do the images come from?</h3>
+            <p>We fetch images from Google, ensuring a wide variety of results.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+       
+ 
+     
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

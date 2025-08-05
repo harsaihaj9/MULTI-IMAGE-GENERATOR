@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background: #f8f9fa;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background: #00458f;
+  color: white;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.bi-logo {
+  font-weight: bold;
+  font-size: 28px;
+  color: #ffcc00;
+  margin-right: 8px;
+}
+
+.bulk-images {
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.signup-btn {
+  background-color: white;
+  color: #00458f;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup-btn:hover {
+  background-color: #ddd;
+}
+
+/* Main Container */
+.container {
+  width: 40%;
+  margin: 80px auto;
+  padding: 50px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs & Buttons */
+input, button {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+input {
+  background: #f5f5f5;
+}
+
+button {
+  background-color: #00458f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #1463b7;
+}
+
+/* Progress Bar */
+#progress-container {
+  width: 90%;
+  margin: 15px auto;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+
+#progress-bar {
+  height: 10px;
+  width: 0%;
+  background: #00458f;
+}
+
+#progress-text {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* FAQs */
+.faq-section {
+  margin: 40px auto;
+  width: 60%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h3 {
+  color: #00458f;
+}
+
+.faq p {
+  color: #444;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  background: #00458f;
+  color: white;
+  padding: 15px 0;
+  font-size: 12px;
+}
+
+footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
